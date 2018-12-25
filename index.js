@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     "indent": "off",
     "import/prefer-default-export": "off",
+    "implicit-arrow-linebreak": "off", // Incompatible with prettier
     "react/jsx-filename-extension": "off",
     "no-nested-ternary": "off",
     "no-implicit-coercion": "error",
