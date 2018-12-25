@@ -45,6 +45,7 @@ module.exports = {
     }],
     "jsx-a11y/label-has-associated-control": "off"
   },
+  parser: "babel-eslint",
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 8,
