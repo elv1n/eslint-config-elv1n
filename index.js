@@ -1,6 +1,21 @@
 module.exports = {
   extends: ["airbnb"],
   plugins: ["prettier"],
+  parser: "babel-eslint",
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true,
+    jest: true,
+    node: true,
+  },
   rules: {
     "indent": "off",
     "import/prefer-default-export": "off",
@@ -44,14 +59,5 @@ module.exports = {
       checkChildContextTypes: true,
     }],
     "jsx-a11y/label-has-associated-control": "off"
-  },
-  parser: "babel-eslint",
-  parserOptions: {
-    sourceType: "module",
-    ecmaVersion: 8,
-    ecmaFeatures: {
-      jsx: true,
-      experimentalObjectRestSpread: true
-    }
   }
 }
