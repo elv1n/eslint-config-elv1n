@@ -1,5 +1,6 @@
 module.exports = {
   extends: ["airbnb"],
+  plugins: ["prettier"],
   rules: {
     "indent": "off",
     "import/prefer-default-export": "off",
