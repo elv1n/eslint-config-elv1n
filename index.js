@@ -7,6 +7,21 @@ module.exports = {
     "no-nested-ternary": "off",
     "no-implicit-coercion": "error",
     "no-unused-vars": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: true
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      { overrides: { "?": "ignore", ":": "ignore" } }
+    ],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "object-curly-newline": ["error", { consistent: true }],
+    "function-paren-newline": "off",
     "react/no-unused-state": "warn",
     "react/prefer-stateless-function": ["warn", { ignorePureComponents: true }],
     "react/jsx-wrap-multilines": "off",
