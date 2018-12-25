@@ -22,6 +22,7 @@ module.exports = {
     "implicit-arrow-linebreak": "off", // Incompatible with prettier
     "react/jsx-filename-extension": "off",
     "no-nested-ternary": "off",
+    "no-shadow": "off", // incompatible using redux, if there will be options disable only for imports I would definitely use it
     "no-implicit-coercion": "error",
     "no-unused-vars": "warn",
     "prettier/prettier": [
