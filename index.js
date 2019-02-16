@@ -60,6 +60,15 @@ module.exports = {
       checkContextTypes: true,
       checkChildContextTypes: true,
     }],
-    "jsx-a11y/label-has-associated-control": "off"
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/jsx-sort-props": ["warn", {
+      ignoreCase: true
+    }],
+    "react/jsx-sort-default-props": ["warn", {
+      ignoreCase: true
+    }],
+    "react/sort-prop-types": ["warn", {
+      ignoreCase: true
+    }],
   }
 }
