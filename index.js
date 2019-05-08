@@ -1,6 +1,6 @@
 module.exports = {
   extends: ["airbnb"],
-  plugins: ["prettier"],
+  plugins: ["prettier", "react-hooks"],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2018,
@@ -70,5 +70,7 @@ module.exports = {
     "react/sort-prop-types": ["warn", {
       ignoreCase: true
     }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
