@@ -28,6 +28,7 @@ module.exports = {
     "no-shadow": "off", // incompatible using redux, if there will be options disable only for imports I would definitely use it
     "no-implicit-coercion": "error",
     "no-unused-vars": "warn",
+    "array-bracket-spacing": "always"
     "prettier/prettier": [
       "error",
       {
