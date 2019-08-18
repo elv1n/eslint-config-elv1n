@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb"],
+  extends: ["eslint-config-airbnb"],
   plugins: [
     "prettier",
     //"react-hooks"
