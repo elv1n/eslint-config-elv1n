@@ -66,14 +66,16 @@ module.exports = {
     }],
     "react/sort-prop-types": ["warn", {
       ignoreCase: true
-    }],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      typescript: {},
-    },
+    }]
     //"react-hooks/rules-of-hooks": "error",
     //"react-hooks/exhaustive-deps": "warn"
+  },
+  settings: {
+    "import/parsers": {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    "import/resolver": {
+      typescript: {},
+    }
   }
 }
