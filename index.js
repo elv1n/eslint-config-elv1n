@@ -1,17 +1,11 @@
 module.exports = {
-  extends: ["eslint-config-airbnb"],
+  extends: ["eslint-config-airbnb", "plugin:@typescript-eslint/recommended"],
   plugins: [
+    "@typescript-eslint",
     "prettier",
     //"react-hooks"
   ],
-  parser: "babel-eslint",
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
+  parser: "@typescript-eslint/parser",
   env: {
     browser: true,
     commonjs: true,
@@ -23,7 +17,7 @@ module.exports = {
     "indent": "off",
     "import/prefer-default-export": "off",
     "implicit-arrow-linebreak": "off", // Incompatible with prettier
-    "react/jsx-filename-extension": "off",
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.ts', '.tsx'] }],
     "no-nested-ternary": "off",
     "no-shadow": "off", // incompatible using redux, if there will be options disable only for imports I would definitely use it
     "no-implicit-coercion": "error",
@@ -73,6 +67,12 @@ module.exports = {
     "react/sort-prop-types": ["warn", {
       ignoreCase: true
     }],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {},
+    },
     //"react-hooks/rules-of-hooks": "error",
     //"react-hooks/exhaustive-deps": "warn"
   }
