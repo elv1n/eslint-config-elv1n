@@ -67,6 +67,7 @@ module.exports = {
     "react/sort-prop-types": ["warn", {
       ignoreCase: true
     }],
+    'react/state-in-constructor': 'off',
     '@typescript-eslint/indent': [2, 2],
     "@typescript-eslint/interface-name-prefix": ["error", "always"]
     //"react-hooks/rules-of-hooks": "error",
