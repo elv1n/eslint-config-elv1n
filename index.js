@@ -15,13 +15,18 @@ module.exports = {
   },
   rules: {
     "indent": "off",
+    // both are find https://eslint.org/docs/rules/arrow-body-style#top
     "arrow-body-style": "off",
-    "import/prefer-default-export": "off",
-    "implicit-arrow-linebreak": "off", // Incompatible with prettier
+    // Incompatible with prettier
+    "implicit-arrow-linebreak": "off",
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.ts', '.tsx'] }],
     "no-nested-ternary": "off",
-    "no-shadow": "off", // incompatible using redux, if there will be options disable only for imports I would definitely use it
+    // incompatible using redux, if there will be options disable only for imports I would definitely use it
+    "no-shadow": "off",
     "no-implicit-coercion": "error",
+    // prettier
+    "no-confusing-arrow": "off",
+    "template-curly-spacing" : "error",
     "no-unused-vars": "warn",
     "prettier/prettier": [
       "error",
@@ -46,6 +51,8 @@ module.exports = {
     "react/jsx-indent": "off",
     // prettier conflict
     "react/jsx-curly-newline": "off",
+    // prettier conflict
+    "space-before-function-paren": "off",
     "react/prop-types": [
       "warn",
       {
@@ -71,8 +78,12 @@ module.exports = {
       ignoreCase: true
     }],
     'react/state-in-constructor': 'off',
-    '@typescript-eslint/indent': [2, 2],
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "warn",
+    // prettier
+    "@typescript-eslint/indent": "off",
     "@typescript-eslint/interface-name-prefix": ["error", "always"]
+
     //"react-hooks/rules-of-hooks": "error",
     //"react-hooks/exhaustive-deps": "warn"
   },
