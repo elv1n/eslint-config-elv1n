@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     "indent": "off",
+    "arrow-body-style": "off",
     "import/prefer-default-export": "off",
     "implicit-arrow-linebreak": "off", // Incompatible with prettier
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.ts', '.tsx'] }],
@@ -43,6 +44,8 @@ module.exports = {
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-first-prop-new-line": "off",
     "react/jsx-indent": "off",
+    // prettier conflict
+    "react/jsx-curly-newline": "off",
     "react/prop-types": [
       "warn",
       {
