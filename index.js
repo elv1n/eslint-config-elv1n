@@ -19,6 +19,8 @@ module.exports = {
     "arrow-body-style": "off",
     // Incompatible with prettier
     "implicit-arrow-linebreak": "off",
+    // leave it for prettier
+    "comma-dangle": "off",
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.ts', '.tsx'] }],
     "no-nested-ternary": "off",
     // incompatible using redux, if there will be options disable only for imports I would definitely use it
@@ -31,7 +33,8 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        singleQuote: true
+        singleQuote: true,
+        arrowParens: "avoid"
       }
     ],
     "operator-linebreak": [
@@ -39,7 +42,6 @@ module.exports = {
       "after",
       { overrides: { "?": "ignore", ":": "ignore" } }
     ],
-    "comma-dangle": ["error", "never"],
     "arrow-parens": ["error", "as-needed"],
     "object-curly-newline": ["error", { consistent: true }],
     "function-paren-newline": "off",
@@ -82,12 +84,26 @@ module.exports = {
     "import/no-default-export": "warn",
     // prettier
     "@typescript-eslint/indent": "off",
-    "@typescript-eslint/interface-name-prefix": ["error", "always"]
+    "@typescript-eslint/interface-name-prefix": ["error", "always"],
+    // don't like it anymore
+    'react/destructuring-assignment': 'off',
 
     //"react-hooks/rules-of-hooks": "error",
     //"react-hooks/exhaustive-deps": "warn"
+
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
   settings: {
+    "import/extensions": [".js",".jsx",".ts",".tsx"],
     "import/parsers": {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
