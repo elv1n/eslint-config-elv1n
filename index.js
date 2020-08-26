@@ -55,20 +55,13 @@ module.exports = {
     "react/jsx-curly-newline": "off",
     // prettier conflict
     "space-before-function-paren": "off",
-    "react/prop-types": [
-      "warn",
-      {
-        ignore: ["children", "classes"],
-        customValidators: [],
-        skipUndeclared: false
-      }
-    ],
+    // use ts
+    'react/require-default-props': 'off',
+    "react/prop-types": "off",
+    'react/jsx-props-no-spreading': 'off',
+
     "react/jsx-no-duplicate-props": ["error", { ignoreCase: false }],
-    "react/forbid-prop-types": ["error", {
-      forbid: ["any", "array"],
-      checkContextTypes: true,
-      checkChildContextTypes: true,
-    }],
+
     "jsx-a11y/label-has-associated-control": "off",
     "react/jsx-sort-props": ["warn", {
       ignoreCase: true
