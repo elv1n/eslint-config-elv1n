@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-elv1n-react",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "main": "index.js",
   "author": "Elvin Dzhavadov",
   "license": "MIT",
@@ -8,7 +8,9 @@
     "index.js"
   ],
   "eslintConfig": {
-    "extends": ["./index.js"]
+    "extends": [
+      "./index.js"
+    ]
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.3.0",
