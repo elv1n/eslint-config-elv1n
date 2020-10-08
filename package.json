@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-elv1n-react",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Elvin Dzhavadov",
   "license": "MIT",
