@@ -1,10 +1,10 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
     'prettier/react',
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
   plugins: [
     '@typescript-eslint',
@@ -19,12 +19,17 @@ module.exports = {
     jest: true,
     node: true,
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-use-before-define': 'off',
+        'no-shadow': 'off',
+      },
+    },
+  ],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.ts', '.tsx'] }],
-    'no-nested-ternary': 'off',
-    // incompatible using redux, if there will be options disable only for imports
-    // I would definitely use it
-    'no-shadow': 'off',
     'no-implicit-coercion': 'error',
     'no-unused-vars': 'warn',
     'prettier/prettier': [
