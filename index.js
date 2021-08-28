@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'eslint-config-airbnb',
-    'prettier/react',
     'plugin:prettier/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
