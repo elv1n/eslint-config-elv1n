@@ -74,13 +74,17 @@ module.exports = {
       },
     ],
     'react/state-in-constructor': 'off',
-    'import/prefer-default-export': 'off',
-    'import/no-default-export': 'warn',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
     // don't like it anymore
     'react/destructuring-assignment': 'off',
-
-    // "react-hooks/rules-of-hooks": "error",
-    // "react-hooks/exhaustive-deps": "warn"
+    'import/no-default-export': 'warn',
+    'import/prefer-default-export': 'off',
 
     'import/extensions': [
       'error',
