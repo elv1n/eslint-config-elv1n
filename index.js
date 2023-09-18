@@ -61,12 +61,6 @@ module.exports = {
         ignoreCase: true,
       },
     ],
-    'react/sort-default-prop': [
-      'warn',
-      {
-        ignoreCase: true,
-      },
-    ],
     'react/sort-prop-types': [
       'warn',
       {
